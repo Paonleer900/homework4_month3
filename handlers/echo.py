@@ -4,7 +4,7 @@ from aiogram import types, Dispatcher
 
 async def echo(message:types.Message):
     text=message.text
-    if text.isdigitх():
+    if text.isdigit():
         await message.answer(int(text)**2)
     else:
         await message.answer(text)
