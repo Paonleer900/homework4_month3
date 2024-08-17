@@ -1,8 +1,9 @@
-from aiogram.types import InlineKeyboardMarkup, ReplyKeyboardMarkup, KeyboardButton
+from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 
-size=ReplyKeyboardMarkup(resize_keyboard=True).add(KeyboardButton(text='10'),
-                                                   KeyboardButton(text='20'),
-                                                   KeyboardButton(text='30'),
-                                                   KeyboardButton(text='40'),)
+cancel = ReplyKeyboardMarkup(resize_keyboard=True).add(
+    KeyboardButton('Отмена')
+)
 
-cancel = ReplyKeyboardMarkup(resize_keyboard=True)
+submit_buttons = ReplyKeyboardMarkup(resize_keyboard=True).add(
+    KeyboardButton('Да'), KeyboardButton('Нет')
+)

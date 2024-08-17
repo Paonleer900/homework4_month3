@@ -4,9 +4,21 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 async def quiz(message: types.Message):
+    # button_quiz = InlineKeyboardMarkup(row_width=1)
+    # button_quiz_1 = InlineKeyboardButton("Первая!",
+    #                                      callback_data="button_1")
+    # button_quiz_2 = InlineKeyboardButton("Вторая",
+    #                                      callback_data="button_2")
+    # button_quiz_3 = InlineKeyboardButton("Третья",
+    #                                      callback_data="button_3")
+    # button_quiz.add(button_quiz_1, button_quiz_2, button_quiz_3)
+    #
+    # await message.answer(text='Проверка кнопок',
+    #                      reply_markup=button_quiz)
+
     button_quiz = InlineKeyboardMarkup()
-    button_quiz.add(InlineKeyboardButton(text='next',
-                                         callback_data='button_1'))
+    button_quiz.add(InlineKeyboardButton("Дальше!",
+                                         callback_data="button_1"))
 
     question = 'Месси или Роналду'
 
@@ -24,8 +36,7 @@ async def quiz(message: types.Message):
         reply_markup=button_quiz
     )
 
-
-async def quiz_2_callback(call: types.CallbackQuery):
+async def quiz_2(call: types.CallbackQuery):
     button_quiz = InlineKeyboardMarkup()
     button_quiz.add(InlineKeyboardButton("Дальше!",
                                          callback_data="button_2"))
@@ -48,7 +59,7 @@ async def quiz_2_callback(call: types.CallbackQuery):
     )
 
 
-async def quiz_3_callback(call: types.CallbackQuery):
+async def quiz_3(call: types.CallbackQuery):
     question = 'Backend, Frontend or IOS developer'
 
     answer = ["Backend", "Frontend", "IOS"]
@@ -67,8 +78,8 @@ async def quiz_3_callback(call: types.CallbackQuery):
     )
 
 
+
 def register_quiz(dp: Dispatcher):
     dp.register_message_handler(quiz, commands=['quiz'])
-    dp.register_callback_query_handler(quiz_2_callback, text='button_1')
-    dp.register_callback_query_handler(quiz_3_callback, text='button_2')
-
+    dp.register_callback_query_handler(quiz_2, text='button_1')
+    dp.register_callback_query_handler(quiz_3, text='button_2')

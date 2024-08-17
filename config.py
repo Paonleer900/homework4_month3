@@ -1,14 +1,11 @@
-from os import getenv
-from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher
+from decouple import config
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 
+admin = [123456789, 987654321]
 
 
-load_dotenv()
-
-token=getenv('TOKEN')
-bot = Bot(token=token)
-storage = MemoryStorage()
-dp = Dispatcher(bot=bot, storage=storage)
-
+TOKEN = config("TOKEN")
+bot = Bot(token=TOKEN)
+storege = MemoryStorage()
+dp = Dispatcher(bot=bot, storage=storege)
