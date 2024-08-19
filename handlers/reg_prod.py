@@ -3,14 +3,14 @@ from aiogram import types, Dispatcher
 from db import database
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
-from buttons import size
+# from buttons import size
 
 from config import bot, dp
 from aiogram import types, Dispatcher
 from db import database
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
-from buttons import size
+# from buttons import size
 
 
 class FSM_store(StatesGroup):

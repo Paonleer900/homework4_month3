@@ -5,20 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85d22c5b-c2ae-435c-8e51-a44184d7a1c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/db/db_main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/commands.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/notification.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/send_products.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/admin_bot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/webapp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buttons.py" beforeDir="false" afterPath="$PROJECT_DIR$/buttons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot_database.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/queries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/db_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/db_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_main.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/FSM_online_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/FSM_online_store.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/FSM_reg.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/FSM_reg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/echo.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/echo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/notification.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/notification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/quiz.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/quiz.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/reg_prod.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/reg_prod.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +50,7 @@
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;Python.reg_prod.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Homework3&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -152,7 +151,10 @@
       <workItem from="1723804272828" duration="129000" />
       <workItem from="1723804434829" duration="900000" />
       <workItem from="1723805395807" duration="2094000" />
-      <workItem from="1723893902750" duration="4341000" />
+      <workItem from="1723893902750" duration="7474000" />
+      <workItem from="1723977106234" duration="1318000" />
+      <workItem from="1724073065077" duration="3022000" />
+      <workItem from="1724084639776" duration="8063000" />
     </task>
     <servers />
   </component>
